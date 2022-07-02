@@ -1,7 +1,10 @@
-package com.onlineJudge.programmers.hash;
+package com.onlineJudge.programmers.hash.MarathonTest;
 
+import com.onlineJudge.programmers.hash.Marathon.Marathon;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import java.util.LinkedList;
 
 class MarathonTest {
 
@@ -10,6 +13,7 @@ class MarathonTest {
     @Test
     public void runMarathon() {
         // 문제에서 주어진 input 1
+        LinkedList s = new LinkedList();
         String[] inputValue1 = {"leo", "kiki", "eden"};
         // 문제에서 주어진 input 2
         String[] inputValue2 = {"eden", "kiki"};

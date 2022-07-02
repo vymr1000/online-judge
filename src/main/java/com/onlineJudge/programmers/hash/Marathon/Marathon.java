@@ -1,4 +1,4 @@
-package com.onlineJudge.programmers.hash;
+package com.onlineJudge.programmers.hash.Marathon;
 
 import java.util.Map;
 import java.util.HashMap;
