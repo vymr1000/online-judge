@@ -51,11 +51,7 @@ public class RenewMenu {
     }
 
     // 조합을 구하는 함수
-    public void combination(char[] arr
-            , boolean[] visited
-            , int start
-            , int depth
-            , int r) {
+    public void combination(char[] arr, boolean[] visited, int start, int depth, int r) {
         if(depth == r) {
             for(int i=0; i<arr.length; i++) {
                 if(visited[i]) sb.append(String.valueOf(arr[i]));
