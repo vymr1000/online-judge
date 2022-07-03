@@ -5,7 +5,10 @@ import com.onlineJudge.programmers.hash.RenewMenu.RenewMenu;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.List;
 
 class RenewMenuTest {
 
@@ -13,20 +16,16 @@ class RenewMenuTest {
 
     @Test
     public void runRenewMenu() {
-        // 문제에서 주어진 input 1
-        String[] inputValue1;
-        // 문제에서 주어진 input 2
-        String[] inputValue2;
+        String[] inputValue1 = new String[]{"ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"};
+        int[] inputValue2 = new int[]{2, 3, 4};
         // 결과값
-        String returnValue;
+        List<String> returnValue = new ArrayList<String>();
         // 기대값
-        String expectedValue;
-
+        List<String> expectedValue = new ArrayList<String>(Arrays.asList("AC", "ACDE", "BCFG", "CDE"));
         // solution 함수 호출 결과값을 리턴받는다
-        //returnValue = renewMenu.solution(inputValue1, inputValue2);
-
+        returnValue = renewMenu.solution(inputValue1, inputValue2);
         // 결과값과 기대값 비교한다
-        // Assertions.assertThat(returnValue).isEqualTo(expectedValue);
+        Assertions.assertThat(returnValue).isEqualTo(expectedValue);
     }
 
 }
