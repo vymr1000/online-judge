@@ -12,10 +12,9 @@ import java.util.List;
 
 class RenewMenuTest {
 
-    RenewMenu renewMenu = new RenewMenu();
-
     @Test
     public void runRenewMenu() {
+        RenewMenu renewMenu = new RenewMenu();
         String[] inputValue1 = new String[]{"ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"};
         int[] inputValue2 = new int[]{2, 3, 4};
         // 결과값

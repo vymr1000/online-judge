@@ -8,10 +8,9 @@ import java.util.LinkedList;
 
 class MarathonTest {
 
-    Marathon marathon = new Marathon();
-
     @Test
     public void runMarathon() {
+        Marathon marathon = new Marathon();
         // 문제에서 주어진 input 1
         LinkedList s = new LinkedList();
         String[] inputValue1 = {"leo", "kiki", "eden"};
