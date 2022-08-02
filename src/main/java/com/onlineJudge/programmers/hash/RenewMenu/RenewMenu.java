@@ -2,6 +2,11 @@ package com.onlineJudge.programmers.hash.RenewMenu;
 
 import java.util.*;
 
+/*
+* 프로그래머스 LEVEL 2 메뉴리뉴얼
+* https://school.programmers.co.kr/learn/courses/30/lessons/72411
+*
+* */
 public class RenewMenu {
     // 메뉴를 담을 StringBuilder 선언
     StringBuffer sb = new StringBuffer();
