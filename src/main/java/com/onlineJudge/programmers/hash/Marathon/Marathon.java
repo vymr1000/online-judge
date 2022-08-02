@@ -4,10 +4,10 @@ import java.util.Map;
 import java.util.HashMap;
 
 /*
-* 프로그래머스 LEVEL 1 완주하지 못한 선수
-* https://school.programmers.co.kr/learn/courses/30/lessons/42576
-*
-* */
+ *  프로그래머스 LEVEL 1 완주하지 못한 선수
+ *  https://school.programmers.co.kr/learn/courses/30/lessons/42576
+ *
+ * */
 public class Marathon {
     public String solution(String[] p, String[] c) {
         String answer = "";

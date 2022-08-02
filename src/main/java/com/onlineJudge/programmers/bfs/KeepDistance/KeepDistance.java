@@ -4,10 +4,10 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /*
-* 프로그래머스 LEVEL 2 거리두기 확인하기
-* https://school.programmers.co.kr/learn/courses/30/lessons/81302
-*
-* */
+ *  프로그래머스 LEVEL 2 거리두기 확인하기
+ *  https://school.programmers.co.kr/learn/courses/30/lessons/81302
+ *
+ * */
 public class KeepDistance {
 
     public int[] solution(String[][] places) {
@@ -78,7 +78,7 @@ public class KeepDistance {
     }
 
     // 2차원 배열 위치를 담는 클래스
-    class Pos {
+    static class Pos {
         int r;
         int c;
 
