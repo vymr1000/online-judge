@@ -37,11 +37,9 @@ public class Traffic {
                 /*
                 * 직전 job의 끝을 기준으로
                 *   1. 반복문의 job이 진행중인지
-                *   2. 반복문의 job이 끝나기전 1초 사이에 끝난건지
-                *   3. 반복문의 job이 끝난후 1초 사이에 시작된건지
+                *   2. 반복문의 job이 끝난후 1초 사이에 시작된건지
                 * */
                 if(startJobs[j] <= endRange && endJobs[j] >= endRange
-                        || startJobs[j] <= endRange && endJobs[j] > endRange - 1000
                         || startJobs[j] < endRange + 1000 ) {
                     cnt++;
                 }
