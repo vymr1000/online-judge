@@ -33,6 +33,7 @@ public class Traffic {
         for (int i = 0; i < lines.length; i++) {
             int endRange = endJobs[i];
             int cnt = 1;
+            /* 문제의 중요 조건 : 응답완료시간 S를 기준으로 오름차순 "정렬" */
             for (int j = i+1; j < lines.length; j++) {
                 /*
                 * 직전 job의 끝을 기준으로
