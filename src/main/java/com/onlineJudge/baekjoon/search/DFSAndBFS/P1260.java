@@ -1,4 +1,4 @@
-package com.onlineJudge.baekjoon.search.DfsAndBfs;
+package com.onlineJudge.baekjoon.search.DFSAndBFS;
 
 import java.io.BufferedReader;
 import java.io.IOException;
