@@ -1,17 +1,16 @@
-package com.onlineJudge.baekjoon.search.ConnectedElements;
+package com.onlineJudge.baekjoon.search.DfsAndBfs;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.StringTokenizer;
+import java.util.*;
 
 /*
- *  백준 S2 연결요소의 개수 - DFS
- *  https://www.acmicpc.net/problem/11724
+ *  백준 S2 DFS와 BFS
+ *  https://www.acmicpc.net/problem/1260
  *
  * */
-public class P11724 {
+public class P1260 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
@@ -19,17 +18,16 @@ public class P11724 {
 
         int N = Integer.parseInt(st.nextToken());
         int M = Integer.parseInt(st.nextToken());
-        int answer = 0;
+        int start = Integer.parseInt(st.nextToken());
 
         // 노드 배열, 방문 배열 선언 및 초기화
         ArrayList<Integer>[] A = new ArrayList[N+1];
-        boolean[] visited = new boolean[N+1];
+        boolean[] visited;
 
         for (int i = 1; i < N+1; i++) {
             A[i] = new ArrayList<>();
         }
 
-        // 무방향그래프 세팅
         for (int i = 0; i < M; i++) {
             st = new StringTokenizer(bf.readLine());
             int v1 = Integer.parseInt(st.nextToken());
@@ -38,25 +36,45 @@ public class P11724 {
             A[v2].add(v1);
         }
 
-        // 시작점 설정 - DFS 탐색
         for (int i = 1; i < N+1; i++) {
-            if (!visited[i]) {
-                dfs(A, visited, i);
-                answer++;
-            }
+            Collections.sort(A[i]);
         }
 
-        System.out.println(answer);
+        visited = new boolean[N+1];
+        dfs(A, visited, start);
+        System.out.println();
+
+        visited = new boolean[N+1];
+        bfs(A, visited, start);
+        System.out.println();
 
     }
 
     private static void dfs(ArrayList<Integer>[] A, boolean[] visited, int v) {
         if (visited[v]) return;
         visited[v] = true;
-
+        System.out.print(v + " ");
         for (int node: A[v]) {
             if (!visited[node]) {
                 dfs(A, visited, node);
+            }
+        }
+    }
+
+    private static void bfs(ArrayList<Integer>[] A, boolean[] visited, int v) {
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(v);
+        visited[v] = true;
+
+        while(!queue.isEmpty()) {
+            int cur = queue.poll();
+            System.out.print(cur + " ");
+
+            for (int node: A[cur]) {
+                if (!visited[node]) {
+                    visited[node] = true;
+                    queue.offer(node);
+                }
             }
         }
     }
