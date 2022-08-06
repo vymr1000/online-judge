@@ -1,4 +1,4 @@
-package com.onlineJudge.programmers.bfs.KeepDistance;
+package com.onlineJudge.programmers.search.KeepDistance;
 
 import java.util.LinkedList;
 import java.util.Queue;

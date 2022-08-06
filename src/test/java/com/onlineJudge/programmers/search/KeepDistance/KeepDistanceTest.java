@@ -1,9 +1,7 @@
-package com.onlineJudge.programmers.bfs.KeepDistance;
+package com.onlineJudge.programmers.search.KeepDistance;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class KeepDistanceTest {
 
