@@ -1,4 +1,4 @@
-package com.onlineJudge.baekjoon.search.DFSAndBFS;
+package com.onlineJudge.baekjoon.Search.DFSAndBFS;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -21,7 +21,7 @@ public class P1260 {
         int start = Integer.parseInt(st.nextToken());
 
         // 노드 배열, 방문 배열 선언 및 초기화
-        ArrayList<Integer>[] A = new ArrayList[N+1];
+        ArrayList<Integer>[] A = new ArrayList<>[N+1];
         boolean[] visited;
 
         for (int i = 1; i < N+1; i++) {

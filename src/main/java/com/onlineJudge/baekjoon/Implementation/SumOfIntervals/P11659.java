@@ -1,4 +1,4 @@
-package com.onlineJudge.baekjoon.implementation.SumOfIntervals;
+package com.onlineJudge.baekjoon.Implementation.SumOfIntervals;
 
 import java.io.BufferedReader;
 import java.io.IOException;

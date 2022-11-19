@@ -1,4 +1,4 @@
-package com.onlineJudge.baekjoon.search.ConnectedElements;
+package com.onlineJudge.baekjoon.Search.ConnectedElements;
 
 import java.io.BufferedReader;
 import java.io.IOException;
